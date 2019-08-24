@@ -1,0 +1,8 @@
+ const proxy = require("http-proxy-middleware");
+ module.exports=(app)=>{
+     app.use(proxy("/api",{
+         target:"https://b2capigateway.yiguo.com",
+         changeOrigin:true,
+     }))
+     
+ }
