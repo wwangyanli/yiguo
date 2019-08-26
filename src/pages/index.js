@@ -26,11 +26,17 @@ const Login=Loadable({
     loader:()=>import("./login"),
     loading:Loading
 })
+
+const SearchDetail=Loadable({
+    loader:()=>import("./search_detail"),
+    loading:Loading
+})
 export {
     Home,
     Eat,
     Mine,
     Shopping,
     Sort,
-    Login
+    Login,
+    SearchDetail
 }
