@@ -5,7 +5,7 @@ export default class Shopping extends Component {
         return (
             <div>
                 购物车
-                
+                1111
             </div>
         )
     }
