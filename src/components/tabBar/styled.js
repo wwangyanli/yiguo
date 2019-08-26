@@ -37,7 +37,7 @@ export const TabBarWrapper = styled.div`
             
         }
         .active{
-            color:#008842;
+            color:#f21c1c;
         }
     }
 `

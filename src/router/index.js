@@ -9,15 +9,7 @@ import { Home, Eat, Mine, Shopping, Sort ,Login} from "@pages"
         name: "首页",
         icon: "iconfont icon-home_normal"
     },
-    {
-        path: "/eat",
-        component: Eat,
-        meta: {
-            flag: true
-        },
-        name: "吃饭吧",
-        icon: "iconfont icon-licai"
-    },
+    
     {
         path: "/sort",
         component:Sort,
@@ -26,6 +18,15 @@ import { Home, Eat, Mine, Shopping, Sort ,Login} from "@pages"
         },
         name: "分类",
         icon: "iconfont icon-fenlei-0"
+    },
+    {
+        path: "/eat",
+        component: Eat,
+        meta: {
+            flag: true
+        },
+        name: "消息",
+        icon: "iconfont icon-xiaoxi"
     },
 
     {
@@ -45,7 +46,7 @@ import { Home, Eat, Mine, Shopping, Sort ,Login} from "@pages"
             flag: true,
             auth:true
         },
-        name: "我的易果",
+        name: "我的",
         icon: "iconfont icon-wode2"
     },
 
