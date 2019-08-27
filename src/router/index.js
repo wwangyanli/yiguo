@@ -1,4 +1,4 @@
-import { Home, Eat, Mine, Shopping, Sort ,Login,SearchDetail} from "@pages"
+import { Home, Eat, Mine, Shopping, Sort ,Login,SearchDetail,Search} from "@pages"
  export const tabBarRoute = [
     {
         path: "/home",
@@ -66,6 +66,14 @@ export const noTabBarRoute=[
             flag:false
         },
         name:"分类详情"
+    },
+    {
+        path:"/search",
+        component:Search,
+        meta:{
+            flag:false
+        },
+        name:"搜索"
     }
 ]
 export const routeConfig=tabBarRoute.concat(noTabBarRoute)

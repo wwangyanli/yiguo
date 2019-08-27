@@ -5,37 +5,46 @@ export const SearchWarpper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    height: 0.4rem;
-    width: 100%;
+    height: 0.44rem;
+    width: 100%; 
     background: #fff;
-    padding: .07rem .09rem;
     box-sizing: border-box;
     z-index: 102;
     display:flex;
     justify-content: space-between
     align-items: center
     position: relative;
+    border-bottom:0.01rem solid #eee;
+    .left{
+        font-size:0.18rem;
+        width:0.44rem;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center
+    }
     span{
         position:absolute;
-        top:0.13rem;
-        left:0.17rem;
+        top:0.15rem;
+        left:0.5rem;
         z-index:20;
     }
     input{
         position: relative;
-        height: .27rem;
-        width: 3.1rem;
+        height: .3rem;
+        padding:0 0.1rem ;
+        padding-left:0.26rem;
+        width:2.87rem;
         background: #f4f4f4;
         border-radius: 20px;
-        padding: 0 .21rem 0 0.31rem;
         border:0;
     }
-    div{
-        height: 0.4rem;
-        width: 0.48rem;
+    .right{
+        width:0.44rem;
+        height:100%
         text-align: center;
-        font-size: .13rem;
-        color: #11B57C;
+        font-size: .15rem;
+        color: #000;
         display:flex;
         justify-content: center;
         align-items: center
