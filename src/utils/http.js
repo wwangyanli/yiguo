@@ -10,7 +10,7 @@ const get = (url,data)=>{
         str += "&"+key+"="+data[key];
     }
 
-    url = url+str.substr(1);
+    url = url+"?"+str.substr(1);
 
 
    return fetchPro(url,{
