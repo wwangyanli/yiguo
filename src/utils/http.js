@@ -5,13 +5,14 @@ import qs from "qs";
 
 const get = (url,data)=>{
     let str = "";
-        if(data){
-            for(var key in data){
-                str += "&"+key+"="+data[key];
-            }
-        
-            url = url+str.substr(1);
-        }
+
+    for(var key in data){
+        str += "&"+key+"="+data[key];
+    }
+
+    url = url+"?"+str.substr(1);
+
+
    return fetchPro(url,{
     headers:{
         "content-type":"application/json"

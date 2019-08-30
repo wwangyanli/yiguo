@@ -21,6 +21,7 @@ export default class Sort extends Component {
         if(list.length != 0){
             this.handleActive(list,index)
         }
+        // console.log(rightCon)
         return (
             <div>
                 <Search/>
@@ -95,6 +96,7 @@ export default class Sort extends Component {
             sort:arr,
             rightCon:brr
         })
+        // console.log(arr)
         var list = this.refs.sortLeft
         this.setState({
             list:list
