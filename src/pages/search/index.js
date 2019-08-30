@@ -10,12 +10,12 @@ export default class SearchPage extends Component {
             hot:[],
             sales:[]
        }
+       
     }
     
     render() {
         let {hot,sales} = this.state
-        let salesCon = sales[0]?sales[0]:[]
-        console.log(222,hot,sales,salesCon)
+        let salesCon = sales[0]?sales[0]:[]                 
         return (
             <div>
                 <Search title="搜索"/>
@@ -26,7 +26,7 @@ export default class SearchPage extends Component {
                     <div>
                         {
                             hot.map((item,index)=>(
-                                    <a href="" key={index}>{item}</a>
+                                    <a  key={index} onClick={this.handelTaggle.bind(this,item)}>{item}</a>
                             ))
                         }
                     </div>
@@ -49,6 +49,11 @@ export default class SearchPage extends Component {
             hot:data.data.hotSearch,
             sales:data.data.advertise
         })
-        console.log(333,data.data,this.state.sales)
+    }
+    handelTaggle(val){
+        window.sessionStorage.clear();
+        var key= val
+        var url = "/web/api/products/search/v1?"
+        this.props.history.push({pathname:"/searchDetail",state:{url,keyword:key,serchType:1,page:1,inStock:0}})
     }
 }

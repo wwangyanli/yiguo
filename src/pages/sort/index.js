@@ -21,7 +21,6 @@ export default class Sort extends Component {
         if(list.length != 0){
             this.handleActive(list,index)
         }
-        console.log(rightCon)
         return (
             <div>
                 <Search/>
@@ -67,7 +66,7 @@ export default class Sort extends Component {
                                                     {
                                                         right.children[1].children.map((more,idm)=>(
                                                       
-                                                                <li key={idm}>
+                                                                <li key={idm} onClick={this.handleMoreLink.bind(this,more.link)}>
                                                                     <img src={more.picture}/>
                                                                     <div>{more.title}</div>
                                                                 </li>
@@ -96,7 +95,6 @@ export default class Sort extends Component {
             sort:arr,
             rightCon:brr
         })
-        console.log(arr)
         var list = this.refs.sortLeft
         this.setState({
             list:list
@@ -124,6 +122,11 @@ export default class Sort extends Component {
         
     }
     handleLink(val){
+        window.sessionStorage.clear();
+        this.props.history.push({pathname:"/searchDetail",state:{val}})
+    }
+    handleMoreLink(val){
+        window.sessionStorage.clear();
         this.props.history.push({pathname:"/searchDetail",state:{val}})
     }
 }
