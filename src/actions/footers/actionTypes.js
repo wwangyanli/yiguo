@@ -1,0 +1,1 @@
+export const FootersType="ADDSYPE"

@@ -90,6 +90,14 @@ const Fjmd=Loadable({
 })
 
 
+const Register=Loadable({
+    loader:()=>import("./register"),
+    loading:Loading
+})
+const Detail=Loadable({
+    loader:()=>import("./detail"),
+    loading:Loading
+})
 export {
     Home,
     Eat,
@@ -110,5 +118,7 @@ export {
     Detail,
     Ri,
     Yi,
-    Er
+    Er,
+    Register,
+    Detail
 }

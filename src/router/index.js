@@ -1,7 +1,9 @@
-import { Home, Eat, Mine, Shopping, Sort ,Login,SearchDetail,Search,Tuijian,Time,PinTuan,Addree,Quanbu,Fjmd,Detail,Ri,Yi,Er} from "@pages"
+import { Home, Eat, Mine, Shopping, Sort ,Login,SearchDetail,Search,Tuijian,Time,PinTuan,Addree,Quanbu,Fjmd,Detail,Ri,Yi,Er,Register} from "@pages"
 
 import { CityList } from "@pages"; 
-export const tabBarRoute = [
+// export const tabBarRoute = [
+// import { Home, Eat, Mine, Shopping, Sort ,Login,SearchDetail,Register,Detail} from "@pages"
+ export const tabBarRoute = [
     {
         path: "/home",
         component: Home,
@@ -44,15 +46,7 @@ export const tabBarRoute = [
         name: "首页",
         icon: "iconfont icon-home_normal"
     },
-    {
-        path: "/eat",
-        component: Eat,
-        meta: {
-            flag: true
-        },
-        name: "吃饭吧",
-        icon: "iconfont icon-licai"
-    },
+    
     {
         path: "/sort",
         component:Sort,
@@ -61,6 +55,15 @@ export const tabBarRoute = [
         },
         name: "分类",
         icon: "iconfont icon-fenlei-0"
+    },
+    {
+        path: "/eat",
+        component: Eat,
+        meta: {
+            flag: true
+        },
+        name: "消息",
+        icon: "iconfont icon-xiaoxi"
     },
 
     {
@@ -80,9 +83,10 @@ export const tabBarRoute = [
             flag: true,
             auth:true
         },
-        name: "我的易果",
+        name: "我的",
         icon: "iconfont icon-wode2"
     },
+    
 
 ]
 export const noTabBarRoute=[
@@ -143,7 +147,15 @@ export const noTabBarRoute=[
         meta:{
             flag:false
         },
-        name:"详情页"
+        name:"购物车详情"
     },
+    {
+        path:"/register",
+        component:Register,
+        meta:{
+            flag:false
+        },
+        name:"注册"
+    }
 ]
 export const routeConfig=tabBarRoute.concat(noTabBarRoute)
