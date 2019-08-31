@@ -16,5 +16,6 @@ module.exports = override(
         ["@store"]: path.resolve(__dirname, "./src/store"),
         ["@utils"]: path.resolve(__dirname, "./src/utils"),
         ["@common"]: path.resolve(__dirname, "./src/common"),
+        ["@staic"]: path.resolve(__dirname, "./src/staic"),
     })
 ); 

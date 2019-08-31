@@ -8,8 +8,11 @@
 -`styled-components`
 -`react-loadable`
 -`whatwg-fetch`
+-`qs`
+-`better-scroll`
+
 ```javascript
-    yarn add react-router-dom redux react-redux redux-thunk redux-actions styled-components react-loadable whatwg-fetch
+    yarn add react-router-dom redux react-redux redux-thunk redux-actions styled-components react-loadable whatwg-fetch qs
 ```
 #开发环境配置
 -`create-react-app` 创建的项目
